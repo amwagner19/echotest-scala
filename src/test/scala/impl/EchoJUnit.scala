@@ -35,7 +35,7 @@ class EchoJUnit {
   def testSimpleUsingList(): Unit = {
     val echos = List(new SimpleEcho)
     try {
-      val result = echos(1).echo("")
+      val result = echos(0).echo("")
     } catch{
       case ex: IndexOutOfBoundsException =>
     }
